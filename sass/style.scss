@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+* {
+  @include reset;
+}
+
+body {
+  background-color: $primary-color;
+}
+header {
+  background-color: $secondary-color;
+  .logo {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      img {
+        height: 40px;
+        width: auto;
+      }
+      h1 {
+        font-size: 1.5em;
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
