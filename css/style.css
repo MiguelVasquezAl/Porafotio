@@ -4,15 +4,17 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: raleway, sans-serif;
+  font-family: roboto;
 }
 
 body {
-  background-color: #1c1f23;
+  background-color: #f2f2f2;
 }
 
 header {
-  background-color: #4f6b78;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1a1a;
 }
 header .logo a {
   display: flex;
@@ -20,18 +22,26 @@ header .logo a {
   gap: 1em;
 }
 header .logo a img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 header .logo a h1 {
-  font-size: 1.5em;
-  color: #1c1f23;
-  font-weight: 700;
+  font-size: 2em;
+  color: #fbd027;
 }
-
-@media (min-width: 1440px) {
-  body {
-    margin: 0 auto;
-    max-width: 1440px;
-  }
+header .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+header .list li {
+  display: flex;
+}
+header .list li a {
+  color: #f2f2f2;
+  font-size: 1.2em;
+}
+header .list li a:hover {
+  color: #fbd027;
 }/*# sourceMappingURL=style.css.map */
