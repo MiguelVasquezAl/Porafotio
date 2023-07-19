@@ -31,7 +31,8 @@ header {
   .list {
     display: flex;
     align-items: center;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 6rem;
+    gap: 3em;
     ul {
       display: flex;
       gap: 3em;
@@ -55,6 +56,37 @@ header {
               transition: opacity 0.3s ease; /* Agrega una transición suave */
             }
           }
+        }
+      }
+    }
+    .bars__menu {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 2rem;
+      cursor: pointer;
+      span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $primary-color;
+        margin: 5px 0;
+      }
+      &:hover {
+        span {
+          transform-origin: center;
+          transition: all 0.3s ease;
+          background-color: $tertiary-color;
+        }
+        .line1__bars-menu {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .line2__bars-menu {
+          opacity: 0;
+          margin-left: -10px;
+        }
+        .line3__bars-menu {
+          transform: translateY(-8px) rotate(-45deg);
         }
       }
     }

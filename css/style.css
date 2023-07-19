@@ -36,7 +36,8 @@ header .logo a h1 {
 header .list {
   display: flex;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 6rem;
+  gap: 3em;
 }
 header .list ul {
   display: flex;
@@ -61,4 +62,33 @@ header .list ul li a:hover::after {
   background-color: #fbd027; /* Color del subrayado */
   opacity: 1; /* Muestra el subrayado cuando se pasa el mouse */
   transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+header .list .bars__menu {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+}
+header .list .bars__menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #f2f2f2;
+  margin: 5px 0;
+}
+header .list .bars__menu:hover span {
+  transform-origin: center;
+  transition: all 0.3s ease;
+  background-color: #fbd027;
+}
+header .list .bars__menu:hover .line1__bars-menu {
+  transform: translateY(8px) rotate(45deg);
+}
+header .list .bars__menu:hover .line2__bars-menu {
+  opacity: 0;
+  margin-left: -10px;
+}
+header .list .bars__menu:hover .line3__bars-menu {
+  transform: translateY(-8px) rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */
